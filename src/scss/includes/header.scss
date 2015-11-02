@@ -1,0 +1,126 @@
+.header{
+
+    &--index{
+        background-image: url(../img/index-header-bg.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
+        //height: 870px;
+        height: calc(100vh - 24px);
+        position: relative;
+    }
+}
+
+.logo{
+    width: 130px;
+    height: 80px;
+    display: inline-block;
+    margin-right: 120px;
+    & svg{
+        width: 130px;
+        height: 80px;
+    }
+}
+
+.header-menu{
+    width: calc(100% - 250px);
+
+    &__list{
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    &__item{
+        display: inline-block;
+    }
+    &__link{
+        @include font-family('Intro-Regular');
+        @include transition();
+        font-size: 16px;
+        color: $color-header-menu;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover{
+            color: $color-header-menu--hover;
+        }
+    }
+}
+
+
+.header-text{
+    background-color: transparent;
+    width: 590px;
+    //margin-top: 275px;
+    //margin-top: calc(30vh - 24px);
+    margin-bottom: 5%;
+
+    &__title{
+        @include font-family('Intro-Regular');
+        font-size: 60px;
+        text-transform: uppercase;
+        color: $color-header-title;
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+    &__text{
+        @include font-family('OpenSans-Regular');
+        font-size: 18px;
+        color: $color-header-text;
+        margin-top: 0;
+        margin-bottom: 35px;
+    }
+    &__btn{
+        @include transition();
+        @include font-family('Intro-Regular');
+        font-size: 18px;
+        color: $color-header-btn;
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        height: 55px;
+        line-height: 55px;
+        padding: 0 50px;
+        background: url(../img/index-header-btn-bg.jpg) no-repeat;
+        background-size: cover;
+        &:hover{
+            background: url(../img/index-header-btn-bg--hover.jpg) no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+
+.header-down{
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &__text{
+        @include font-family('Intro-Regular');
+        font-size: 30px;
+        color: $color-header-down-text;
+        text-transform: uppercase;
+    }
+    &__arrow{
+        @include transition();
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        left: calc(50% - 35px);
+        top: -10px;
+        background-image: url(../img/icon-arrow-down.png);
+        &:hover{
+            background-image: url(../img/icon-arrow-down--hover.png);
+        }
+    }
+}

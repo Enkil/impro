@@ -4,8 +4,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
+    min-width: 320px;
+    position: relative;
     &--top{
         justify-content: space-between;
+    }
+    &--header-menu{
+        margin-top: 15px;
+        height: calc(100% - 45px);
     }
 }
 
