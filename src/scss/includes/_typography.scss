@@ -1,16 +1,15 @@
 // TYPOGRAPHY
 
 // FONTS
-@include font-face('Roboto-Regular', roboto, regular, roboto-regular-webfont);
-@include font-face('Roboto-Bold', roboto, bold, roboto-bold-webfont);
-@include font-face('Roboto-Light', roboto, light, roboto-light-webfont);
-@include font-face('Roboto-Medium', roboto, medium, roboto-medium-webfont);
+@include font-face('OpenSans-Light', opensans, light, opensans-light-webfont);
+@include font-face('OpenSans-Regular', opensans, regular, opensans-regular-webfont);
+@include font-face('Intro-Light', intro, regular, intro-webfont);
+@include font-face('HelveticaNeueCyr-Bold', HelveticaNeueCyr, bold, helveticaneuecyr-bold-webfont);
 
 html {
   font-size: $base-font-size;
-  line-height: $base-line-height;
 }
 
 body {
-  @include font-family('Roboto-Regular',normal,normal,sans-serif);
+  //@include font-family('Roboto-Regular',normal,normal,sans-serif);
 }

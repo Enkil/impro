@@ -11,7 +11,7 @@ window.onload = function(){
      *  TODO: незабыть в мануал написать про использование
      */
     var AMGLazyLoad = new LazyLoad({
-        elements_selector: ".lazyload", // img
+        elements_selector: "img", // img
         data_srcset: "original" // original-set
     });
 };

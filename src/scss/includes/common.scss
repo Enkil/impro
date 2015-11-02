@@ -1,0 +1,14 @@
+.container{
+    width: 1148px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    &--top{
+        justify-content: space-between;
+    }
+}
+
+.hidden{
+    display: none;
+}
