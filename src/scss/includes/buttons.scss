@@ -1,0 +1,45 @@
+.btn-roll{
+    @include transition();
+    @include font-family('Intro-Regular');
+    font-size: 18px;
+    color: $color-header-btn;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 25px;
+    background-size: cover;
+    position: relative;
+    background-image: url(../img/features-btn-bg--services.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    &:before{
+        @include transition();
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 100%;
+        background-color: $color-feature-btn-services--hover;
+        position: absolute;
+        left: 0;
+    }
+    &:hover:before{  width: 100%;  }
+    &--small{
+        font-size: 13px;
+        background-image: url(../img/features-btn-bg.jpg);
+        &:before{  background-color: $color-feature-btn--hover;  }
+    }
+    &--all-services{
+        font-size: 13px;
+        background-image: url(../img/features-btn-bg--services.jpg);
+    }
+
+    &__text{
+        position: relative;
+        z-index: 5;
+    }
+}
+
+

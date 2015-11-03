@@ -1,18 +1,3 @@
-.courses-wrapper{
-    background-color: $color-courses-bg;
-    padding-top: 60px;
-    padding-bottom: 100px;
-}
-
-.courses-title{
-    @include font-family('Intro-Regular');
-    font-size: 30px;
-    text-transform: uppercase;
-    margin: 0 auto;
-    margin-top: 13px;
-    margin-bottom: 70px;
-}
-
 .courses-slider{
     display: flex;
     flex-wrap: wrap;
@@ -29,17 +14,12 @@
     box-sizing: border-box;
     text-decoration: none;
     margin: 0 15px;
-    &:hover &__title{
-        color: $color-course-title--hover;
-    }
-    &:hover &__img:before{
-        background-color: transparent;
-    }
+    &:hover &__title{  color: $color-course-title--hover;  }
+    &:hover &__img:before{  background-color: transparent;  }
 
     &__img{
         width: 100%;
         height: 270px;
-        background-color: $color-images-bg;
         position: relative;
         &:before{
             @include transition();
@@ -50,15 +30,9 @@
             height: 100%;
         }
 
-        &--yellow:before{
-            background-color: rgba(247, 228, 0, .6);
-        }
-        &--green:before{
-            background-color: rgba(142, 194, 63, .6);
-        }
-        &--violet:before{
-            background-color: rgba(131, 49, 147, .6);
-        }
+        &--yellow:before{  background-color: rgba(247, 228, 0, .6);  }
+        &--green:before{  background-color: rgba(142, 194, 63, .6);  }
+        &--violet:before{  background-color: rgba(131, 49, 147, .6);  }
         & img{
             object-fit: cover;
             width: 100%;
@@ -85,49 +59,12 @@
         width: 230px;
         margin: 0 auto;
         text-align: center;
-        & b{
-            @include font-family('OpenSans-Semibold');
-        }
-        & span{
-            @include font-family('OpenSans-Light');
-        }
+        & b{  @include font-family('OpenSans-Semibold');  }
+        & span{  @include font-family('OpenSans-Light');  }
     }
 }
 
-.courses-btn{
-    @include transition();
-    @include font-family('Intro-Regular');
-    font-size: 18px;
-    color: $color-header-btn;
-    display: inline-block;
-    text-transform: uppercase;
-    text-decoration: none;
-    height: 35px;
-    line-height: 35px;
-    padding: 0 25px;
-    background-size: cover;
-    position: relative;
-    background: url(../img/features-btn-bg--services.jpg) no-repeat;
-    background-size: cover;
-    margin: 0 auto;
-    &:before{
-        @include transition();
-        content: '';
-        display: inline-block;
-        width: 10px;
-        height: 100%;
-        background-color: $color-feature-btn-services--hover;
-        position: absolute;
-        left: 0;
-    }
-    &:hover:before{
-        width: 100%;
-    }
-    &__text{
-        position: relative;
-        z-index: 5;
-    }
-}
+
 
 
 .courses-slider.slick-slider{
@@ -145,19 +82,15 @@
         width: 37px;
         height: 37px;
         background-image: url(../img/slider-arrow.png);
-        &:hover{
-            background-image: url(../img/slider-arrow--hover.png);
-        }
+        &:hover{  background-image: url(../img/slider-arrow--hover.png);  }
     }
     & .slick-prev{
-        &:hover{
-            transform: rotate(180deg);
-        }
+        left: 0;
+        &:hover{  transform: rotate(180deg);  }
     }
     & .slick-next{
+        right: 0;
         transform: rotate(180deg);
-        &:hover{
-            transform: rotate(0deg);
-        }
+        &:hover{  transform: rotate(0deg);  }
     }
 }

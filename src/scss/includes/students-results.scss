@@ -1,0 +1,76 @@
+.st-res-slider{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 55px;
+    width: 100%;
+}
+
+.st-res{
+    display: block;
+    width: 260px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    margin: 0 15px;
+    color: $color-st-res-text;
+    text-align: center;
+    outline: none;
+
+    &__img{
+        width: 100%;
+        height: 130px;
+        margin-bottom: 30px;
+        & img{  object-fit: contain;  }
+    }
+    &__title{
+        @include font-family('OpenSans-Bold');
+        font-size: 14px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    &__bq{
+        @include font-family('OpenSans-Light');
+        font-size: 12px;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    &__cite{
+        @include font-family('OpenSans-Semibold');
+        font-size: 12px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+
+.st-res-slider.slick-slider{
+    position: static;
+    & .slick-track{
+        display: flex;
+        justify-content: space-between;
+    }
+    & .slick-arrow{
+        @include transition();
+        position: absolute;
+        top: 0;
+        cursor: pointer;
+        display: inline-block;
+        width: 37px;
+        height: 37px;
+        background-image: url(../img/slider-arrow.png);
+        &:hover{  background-image: url(../img/slider-arrow--hover.png);  }
+    }
+    & .slick-prev{
+        left: 0;
+        &:hover{  transform: rotate(180deg);  }
+    }
+    & .slick-next{
+        right: 0;
+        transform: rotate(180deg);
+        &:hover{  transform: rotate(0deg);  }
+    }
+}

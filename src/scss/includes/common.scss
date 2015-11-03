@@ -6,9 +6,7 @@
     margin: 0 auto;
     min-width: 320px;
     position: relative;
-    &--top{
-        justify-content: space-between;
-    }
+    &--top{  justify-content: space-between;  }
     &--header-menu{
         margin-top: 15px;
         height: calc(100% - 45px);
@@ -18,4 +16,10 @@
 
 .hidden{
     display: none;
+}
+
+.wrapper{
+    padding-top: 60px;
+    padding-bottom: 100px;
+    &--grey{  background-color: $color-blocks-bg;  }
 }

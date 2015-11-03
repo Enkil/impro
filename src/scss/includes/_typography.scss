@@ -4,6 +4,7 @@
 @include font-face('OpenSans-Light', opensans, light, opensans-light-webfont);
 @include font-face('OpenSans-Regular', opensans, regular, opensans-regular-webfont);
 @include font-face('OpenSans-Semibold', opensans, semibold, opensans-semibold-webfont);
+@include font-face('OpenSans-Bold', opensans, bold, opensans-bold-webfont);
 @include font-face('Intro-Regular', intro, regular, intro-webfont);
 @include font-face('HelveticaNeueCyr-Bold', HelveticaNeueCyr, bold, helveticaneuecyr-bold-webfont);
 
@@ -11,6 +12,13 @@ html {
   font-size: $base-font-size;
 }
 
-body {
-  //@include font-family('Roboto-Regular',normal,normal,sans-serif);
+.h2-title{
+    @include font-family('Intro-Regular');
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 70px;
+    width: 100%;
+    text-align: center;
 }

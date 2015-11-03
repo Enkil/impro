@@ -7,7 +7,6 @@
 @import "vendor/normalize";
 @import "vendor/mq";
 @import "vendor/slick";
-//@import "vendor/slick-theme";
 
 /**
 *  Include custom CSS files
@@ -25,5 +24,7 @@
 @import "includes/header";
 @import "includes/feature";
 @import "includes/courses";
-@import "includes/course-subscribe";
 @import "includes/forms";
+@import "includes/teachers";
+@import "includes/buttons";
+@import "includes/students-results";

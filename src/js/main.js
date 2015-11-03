@@ -16,7 +16,7 @@ window.onload = function(){
     });
 
     /**
-     * Init Slick carousel
+     * Init Slick carousel on courses block
      */
     $('#js-courses-slider').slick({
         slidesToShow: 3,
@@ -24,5 +24,26 @@ window.onload = function(){
         prevArrow: '<div type="button" class="slick-prev"></div>',
         nextArrow: '<div type="button" class="slick-next"></div>'
     });
+
+    /**
+     * Init Slick carousel on teachers block
+     */
+    $('#js-teachers-slider').slick({
+        slidesToShow: 4,
+        lazyLoad: 'ondemand',
+        prevArrow: '<div type="button" class="slick-prev"></div>',
+        nextArrow: '<div type="button" class="slick-next"></div>'
+    });
+
+    /**
+     * Init Slick carousel on Students results block
+     */
+    $('#js-st-res-slider').slick({
+        slidesToShow: 3,
+        lazyLoad: 'ondemand',
+        prevArrow: '<div type="button" class="slick-prev"></div>',
+        nextArrow: '<div type="button" class="slick-next"></div>'
+    });
+
 };
 

@@ -23,9 +23,7 @@
         text-decoration: none;
         margin-right: 80px;
         @include transition();
-        &:hover{
-            color: $color-top-light;
-        }
+        &:hover{  color: $color-top-light;  }
         & svg {
             width: 14px;
             height: 10px;
@@ -33,7 +31,6 @@
             margin-right: 10px;
             vertical-align: middle;
         }
-
     }
     &__phone{
         @include font-family('OpenSans-Bold');
@@ -55,13 +52,10 @@
         letter-spacing: 0.005em;
         margin-right: 5px;
         @include transition();
-        &:hover{
-            color: $color-top-light;
-        }
+        &:hover{  color: $color-top-light;  }
     }
     &__phone-number{
         font-size: (16 / $base-font-size) +rem;
-        color: $color-top-text;
         letter-spacing: 0.022em;
         color: $color-top-light;
     }
@@ -81,37 +75,27 @@
         &--vkontakte{
             background-image: url(../svg/icon-vk.svg);
             background-color: $color-social-vk;
-            &:hover{
-                background-color: lighten($color-social-vk, 20%);
-            }
+            &:hover{  background-color: lighten($color-social-vk, 20%);  }
         }
         &--facebook{
             background-image: url(../svg/icon-fb.svg);
             background-color: $color-social-fb;
-            &:hover{
-                background-color: lighten($color-social-fb, 20%);
-            }
+            &:hover{  background-color: lighten($color-social-fb, 20%);  }
         }
         &--twitter{
             background-image: url(../svg/icon-tw.svg);
             background-color: $color-social-tw;
-            &:hover{
-                background-color: lighten($color-social-tw, 20%);
-            }
+            &:hover{  background-color: lighten($color-social-tw, 20%);  }
         }
         &--youtube{
             background-image: url(../svg/icon-yt.svg);
             background-color: $color-social-yt;
-            &:hover{
-                background-color: lighten($color-social-yt, 20%);
-            }
+            &:hover{  background-color: lighten($color-social-yt, 20%);  }
         }
         &--instagram{
             background-image: url(../svg/icon-inst.svg);
             background-color: $color-social-inst;
-            &:hover{
-                background-color: lighten($color-social-inst, 20%);
-            }
+            &:hover{  background-color: lighten($color-social-inst, 20%);  }
         }
     }
 }

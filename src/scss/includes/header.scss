@@ -48,9 +48,7 @@
         color: $color-header-menu;
         text-transform: uppercase;
         text-decoration: none;
-        &:hover{
-            color: $color-header-menu--hover;
-        }
+        &:hover{  color: $color-header-menu--hover;  }
     }
 }
 
@@ -58,8 +56,6 @@
 .header-text{
     background-color: transparent;
     width: 590px;
-    //margin-top: 275px;
-    //margin-top: calc(30vh - 24px);
     margin-bottom: 5%;
 
     &__title{
@@ -121,8 +117,6 @@
         left: calc(50% - 35px);
         top: -10px;
         background-image: url(../img/icon-arrow-down.png);
-        &:hover{
-            background-image: url(../img/icon-arrow-down--hover.png);
-        }
+        &:hover{  background-image: url(../img/icon-arrow-down--hover.png);  }
     }
 }
