@@ -15,7 +15,6 @@
 
 .courses-slider{
     display: flex;
-    position: relative;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 55px;
@@ -29,6 +28,7 @@
     background-color: $color-course-bg;
     box-sizing: border-box;
     text-decoration: none;
+    margin: 0 15px;
     &:hover &__title{
         color: $color-course-title--hover;
     }
@@ -126,5 +126,38 @@
     &__text{
         position: relative;
         z-index: 5;
+    }
+}
+
+
+.courses-slider.slick-slider{
+        position: static;
+    & .slick-track{
+        display: flex;
+        justify-content: space-between;
+    }
+    & .slick-arrow{
+        @include transition();
+        position: absolute;
+        top: 0;
+        cursor: pointer;
+        display: inline-block;
+        width: 37px;
+        height: 37px;
+        background-image: url(../img/slider-arrow.png);
+        &:hover{
+            background-image: url(../img/slider-arrow--hover.png);
+        }
+    }
+    & .slick-prev{
+        &:hover{
+            transform: rotate(180deg);
+        }
+    }
+    & .slick-next{
+        transform: rotate(180deg);
+        &:hover{
+            transform: rotate(0deg);
+        }
     }
 }

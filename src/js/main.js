@@ -14,5 +14,15 @@ window.onload = function(){
         elements_selector: "img", // img
         data_srcset: "original" // original-set
     });
+
+    /**
+     * Init Slick carousel
+     */
+    $('#js-courses-slider').slick({
+        slidesToShow: 3,
+        lazyLoad: 'ondemand',
+        prevArrow: '<div type="button" class="slick-prev"></div>',
+        nextArrow: '<div type="button" class="slick-next"></div>'
+    });
 };
 

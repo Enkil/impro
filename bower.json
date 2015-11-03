@@ -17,5 +17,7 @@
     "sass-mq": "~3.2.4",
     "vanilla-lazyload": "~1.5.7"
   },
-  "dependencies": {}
+  "dependencies": {
+    "slick-carousel": "~1.5.8"
+  }
 }
