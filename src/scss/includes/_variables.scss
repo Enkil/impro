@@ -9,6 +9,8 @@ $base-line-height: 0;
 * Colors
 **/
 
+$color-images-bg: #ccc;
+
 $color-top-bg: #232323;
 $color-top-text: #6e6f71;
 $color-top-light: #faf7fb;
@@ -26,6 +28,12 @@ $color-header-title: #fefdfe;
 $color-header-text: #000;
 $color-header-btn: #fff;
 $color-header-down-text: #fff;
+
+$color-feature-title: #373a3e;
+$color-feature-text: #6e6e6e;
+$color-feature-btn--hover: #93c400;
+$color-feature-btn-services--hover: #813193;
+
 
 /**
 * Media Queries Breakpoints
