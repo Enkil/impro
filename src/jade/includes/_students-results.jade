@@ -1,66 +1,9 @@
 // Students results
+include ../mixins/_student-result
 .wrapper.wrapper--grey
     .container
         h2.h2-title Результаты учеников
         // Courses slider
         .st-res-slider#js-st-res-slider
-            // Slide / Course
-            section.st-res
-                .st-res__img
-                    img( data-lazy='img/st-res.png' alt='ПРОИЗВОДСТВО POS-МАТЕРИАЛОВ strip-lenta.com' title='ПРОИЗВОДСТВО POS-МАТЕРИАЛОВ strip-lenta.com').st-res__img
-                h3.st-res__title ПРОИЗВОДСТВО POS-МАТЕРИАЛОВ strip-lenta.com
-                blockquote.st-res__bq
-                    cite.st-res__cite Насыров Рустам
-                    |" Благодаря IMPRO удалось не только отбить затраченные на landing и рекламу вложения,но и начать неплохо зарабатывать "
-                a(href='javascript:void(0)' title='Подробнее').btn-roll.btn-roll--small
-                    span.btn-roll__text Подробнее
-            // Slide / Course
-            section.st-res
-                .st-res__img
-                    img( data-lazy='img/st-res.png' alt='ПРОИЗВОДСТВО POS-МАТЕРИАЛОВ strip-lenta.com' title='ПРОИЗВОДСТВО POS-МАТЕРИАЛОВ strip-lenta.com').st-res__img
-                h3.st-res__title ПРОИЗВОДСТВО POS-МАТЕРИАЛОВ strip-lenta.com
-                blockquote.st-res__bq
-                    cite.st-res__cite Насыров Рустам
-                    | " Благодаря IMPRO удалось не только отбить затраченные на landing и рекламу вложения,но и начать неплохо зарабатывать "
-                a(href='javascript:void(0)' title='Подробнее').btn-roll.btn-roll--small
-                    span.btn-roll__text Подробнее
-            // Slide / Course
-            section.st-res
-                .st-res__img
-                    img( data-lazy='img/st-res.png' alt='ПРОИЗВОДСТВО POS-МАТЕРИАЛОВ strip-lenta.com' title='ПРОИЗВОДСТВО POS-МАТЕРИАЛОВ strip-lenta.com').st-res__img
-                h3.st-res__title ПРОИЗВОДСТВО POS-МАТЕРИАЛОВ strip-lenta.com
-                blockquote.st-res__bq
-                    cite.st-res__cite Насыров Рустам
-                    | " Благодаря IMPRO удалось не только отбить затраченные на landing и рекламу вложения,но и начать неплохо зарабатывать "
-                a(href='javascript:void(0)' title='Подробнее').btn-roll.btn-roll--small
-                    span.btn-roll__text Подробнее
-            // Slide / Course
-            section.st-res
-                .st-res__img
-                    img( data-lazy='img/st-res.png' alt='ПРОИЗВОДСТВО POS-МАТЕРИАЛОВ strip-lenta.com' title='ПРОИЗВОДСТВО POS-МАТЕРИАЛОВ strip-lenta.com').st-res__img
-                h3.st-res__title ПРОИЗВОДСТВО POS-МАТЕРИАЛОВ strip-lenta.com
-                blockquote.st-res__bq
-                    cite.st-res__cite Насыров Рустам
-                    | " Благодаря IMPRO удалось не только отбить затраченные на landing и рекламу вложения,но и начать неплохо зарабатывать "
-                a(href='javascript:void(0)' title='Подробнее').btn-roll.btn-roll--small
-                    span.btn-roll__text Подробнее
-            // Slide / Course
-            section.st-res
-                .st-res__img
-                    img( data-lazy='img/st-res.png' alt='ПРОИЗВОДСТВО POS-МАТЕРИАЛОВ strip-lenta.com' title='ПРОИЗВОДСТВО POS-МАТЕРИАЛОВ strip-lenta.com').st-res__img
-                h3.st-res__title ПРОИЗВОДСТВО POS-МАТЕРИАЛОВ strip-lenta.com
-                blockquote.st-res__bq
-                    cite.st-res__cite Насыров Рустам
-                    | " Благодаря IMPRO удалось не только отбить затраченные на landing и рекламу вложения,но и начать неплохо зарабатывать "
-                a(href='javascript:void(0)' title='Подробнее').btn-roll.btn-roll--small
-                    span.btn-roll__text Подробнее
-            // Slide / Course
-            section.st-res
-                .st-res__img
-                    img( data-lazy='img/st-res.png' alt='ПРОИЗВОДСТВО POS-МАТЕРИАЛОВ strip-lenta.com' title='ПРОИЗВОДСТВО POS-МАТЕРИАЛОВ strip-lenta.com').st-res__img
-                h3.st-res__title ПРОИЗВОДСТВО POS-МАТЕРИАЛОВ strip-lenta.com
-                blockquote.st-res__bq
-                    cite.st-res__cite Насыров Рустам
-                    | " Благодаря IMPRO удалось не только отбить затраченные на landing и рекламу вложения,но и начать неплохо зарабатывать "
-                a(href='javascript:void(0)' title='Подробнее').btn-roll.btn-roll--small
-                    span.btn-roll__text Подробнее
+            - for (i=0; i<6; i++)
+                + student-result

@@ -1,51 +1,12 @@
 // Our teachers
+include ../mixins/_teacher-slide
 .wrapper
     .container
         h2.h2-title Наши преподаватели
         // Teachers slider
         .teachers-slider#js-teachers-slider
-            // Slide / Teacher
-            section.teacher
-                img( data-lazy='img/teacher.jpg' alt='Александр Докучалов - Специалист по социальным коммуникациям' title='Александр Докучалов - Специалист по социальным коммуникациям').teacher__img
-                h3.teacher__title Александр Докучалов
-                p.teacher__specs Специалист по социальным коммуникациям
-                p.teacher__specs.teacher__specs--light Опытный таргетолог. Спикер семинаров 1С-Битрикс и UMI
-                a(href='javascript:void(0)' title='Александр Докучалов - Специалист по социальным коммуникациям').link-more Подробнее
-            // Slide / Teacher
-            section.teacher
-                img( data-lazy='img/teacher.jpg' alt='Александр Докучалов - Специалист по социальным коммуникациям' title='Александр Докучалов - Специалист по социальным коммуникациям').teacher__img
-                h3.teacher__title Александр Докучалов
-                p.teacher__specs Специалист по социальным коммуникациям
-                p.teacher__specs.teacher__specs--light Опытный таргетолог. Спикер семинаров 1С-Битрикс и UMI
-                a(href='javascript:void(0)' title='Александр Докучалов - Специалист по социальным коммуникациям').link-more Подробнее
-            // Slide / Teacher
-            section.teacher
-                img( data-lazy='img/teacher.jpg' alt='Александр Докучалов - Специалист по социальным коммуникациям' title='Александр Докучалов - Специалист по социальным коммуникациям').teacher__img
-                h3.teacher__title Александр Докучалов
-                p.teacher__specs Специалист по социальным коммуникациям
-                p.teacher__specs.teacher__specs--light Опытный таргетолог. Спикер семинаров 1С-Битрикс и UMI
-                a(href='javascript:void(0)' title='Александр Докучалов - Специалист по социальным коммуникациям').link-more Подробнее
-            // Slide / Teacher
-            section.teacher
-                img( data-lazy='img/teacher.jpg' alt='Александр Докучалов - Специалист по социальным коммуникациям' title='Александр Докучалов - Специалист по социальным коммуникациям').teacher__img
-                h3.teacher__title Александр Докучалов
-                p.teacher__specs Специалист по социальным коммуникациям
-                p.teacher__specs.teacher__specs--light Опытный таргетолог. Спикер семинаров 1С-Битрикс и UMI
-                a(href='javascript:void(0)' title='Александр Докучалов - Специалист по социальным коммуникациям').link-more Подробнее
-            // Slide / Teacher
-            section.teacher
-                img( data-lazy='img/teacher.jpg' alt='Александр Докучалов - Специалист по социальным коммуникациям' title='Александр Докучалов - Специалист по социальным коммуникациям').teacher__img
-                h3.teacher__title Александр Докучалов
-                p.teacher__specs Специалист по социальным коммуникациям
-                p.teacher__specs.teacher__specs--light Опытный таргетолог. Спикер семинаров 1С-Битрикс и UMI
-                a(href='javascript:void(0)' title='Александр Докучалов - Специалист по социальным коммуникациям').link-more Подробнее
-            // Slide / Teacher
-            section.teacher
-                img( data-lazy='img/teacher.jpg' alt='Александр Докучалов - Специалист по социальным коммуникациям' title='Александр Докучалов - Специалист по социальным коммуникациям').teacher__img
-                h3.teacher__title Александр Докучалов
-                p.teacher__specs Специалист по социальным коммуникациям
-                p.teacher__specs.teacher__specs--light Опытный таргетолог. Спикер семинаров 1С-Битрикс и UMI
-                a(href='javascript:void(0)' title='Александр Докучалов - Специалист по социальным коммуникациям').link-more Подробнее
+            - for (i=0; i<6; i++)
+                +teacher-slide
 
         a(href='javascript:void(0)' title='Посмотреть всех преподавателей').btn-roll
             span.btn-roll__text Посмотреть всех
