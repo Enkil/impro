@@ -45,5 +45,15 @@ window.onload = function(){
         nextArrow: '<div type="button" class="slick-next"></div>'
     });
 
+    /**
+     * Init Slick carousel on Blog block
+     */
+    $('#js-blog-slider').slick({
+        slidesToShow: 2,
+        lazyLoad: 'ondemand',
+        prevArrow: '<div type="button" class="slick-prev"></div>',
+        nextArrow: '<div type="button" class="slick-next"></div>'
+    });
+
 };
 
