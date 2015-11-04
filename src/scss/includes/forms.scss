@@ -16,6 +16,19 @@
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 65px;
+    &--mb-none{
+        margin-bottom: 0;
+    }
+}
+
+.form-subtitle{
+    @include font-family('OpenSans-Regular');
+    font-size: 16px;
+    color: $color-form-title;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
 }
 
 .form{
@@ -49,7 +62,7 @@
         height: 50px;
         line-height: 50px;
         border: 0;
-        padding-left: 55px;
+        padding-left: 60px;
         box-sizing: border-box;
         outline: none;
         &::placeholder{
@@ -57,6 +70,7 @@
             font-size: 18px;
             color: $color-form-input;
         }
+        &--wire{    width: 415px;   }
     }
     &__btn{
         @include transition();

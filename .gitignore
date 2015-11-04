@@ -1,4 +1,3 @@
-/design
 /bower_components
 /build
 # Created by .ignore support plugin (hsz.mobi)
@@ -139,5 +138,5 @@ bower_components/
 sftp-config.json
 
 # Custom rules
-design/*.*
+design/
 !/design/.gitignore
