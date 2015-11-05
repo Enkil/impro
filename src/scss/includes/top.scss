@@ -66,6 +66,7 @@
         background-size: auto 15px;
         background-repeat: no-repeat;
         background-position: center;
+        vertical-align: middle;
         @include transition();
         &:hover{
             transform: scale(1.5);

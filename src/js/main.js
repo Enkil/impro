@@ -87,5 +87,8 @@ window.onload = function(){
         ]
     });
 
+    // Google Map
+    initMap();
+
 };
 
