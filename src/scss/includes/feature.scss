@@ -24,6 +24,10 @@
         &--corporate-edu{  background-image: url(../img/icon-feature--corporate-edu.png);  }
         &--free-events{  background-image: url(../img/icon-feature--free-events.png);  }
         &--services{  background-image: url(../img/icon-feature--services.png);  }
+        &--consalting{  background-image: url(../img/icon-feature--consalting.png);  }
+        &--couching{  background-image: url(../img/icon-feature--couching.png);  }
+        &--audit{  background-image: url(../img/icon-feature--audit.png);  }
+
     }
     &__title{
         @include font-family('OpenSans-Regular');

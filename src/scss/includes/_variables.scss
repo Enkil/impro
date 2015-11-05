@@ -23,7 +23,9 @@ $color-social-yt: #a19811;
 $color-social-inst: #a8a120;
 
 $color-header-menu: #fefdfe;
+$color-header-menu--inner: #4b4c4d;
 $color-header-menu--hover: #813193;
+
 
 $color-header-title: #fefdfe;
 $color-header-text: #000;
@@ -60,7 +62,10 @@ $color-footer-anons: #474749;
 $color-footer-month: #adcd00;
 
 $color-h3-title: #474749;
+$color-h1-title: #fff;
 $color-links: #813193;
+
+$color-breadcrumbs-current: #000;
 
 
 /**
@@ -71,6 +76,7 @@ $mq-breakpoints: (
         mobile:  320px,
         tablet:  740px,
         desktop: 980px,
+        container: 1148px,
         wide:    1300px
 );
 

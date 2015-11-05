@@ -1,4 +1,4 @@
-@include mq($from: desktop, $until: wide) {
+@include mq($from: desktop, $until: container) {
 
     .container{
         width: 100%;
