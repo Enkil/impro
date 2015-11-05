@@ -13,12 +13,41 @@ footer.footer
                         a(href='javascript:void(0)' title='Преподаватели').footer__nav-link Преподаватели
                     li.footer__nav-item
                         a(href='javascript:void(0)' title='Кейсы').footer__nav-link Кейсы
+
         .footer-column
             h3.h3-title Мероприятия
+            .footer-anons
+                span.footer-anons__digits 25-26
+                span.footer-anons__month июля
+                p.footer-anons__text
+                    | ЛЕТНИЙ ПРОРЫВ 2015:
+                    | переход интернет-магазина
+                    | на новый уровень
+                a(href='javascript:void(0)' title='Узнать подробнее').link-more.link-more--footer Подробнее
+
+
         .footer-column
             h3.h3-title Услуги
+            ul.footer__services
+                li.footer__services-item
+                    a(href='javascript:void(0)' title='Закажи аудит').footer__services-link.footer__services-link--audit Закажи аудит
+                li.footer__services-item
+                    a(href='javascript:void(0)' title='Получи личного наставника').footer__services-link.footer__services-link--tutor Получи личного наставника
+                li.footer__services-item
+                    a(href='javascript:void(0)' title='Прокачай своих сотрудников').footer__services-link.footer__services-link--upskills Прокачай своих сотрудников
+
         .footer-column
             h3.h3-title Контакты
+            span.footer__address Санкт-Петербург, ул. Матроса Железняка 57
+            a(href='mailto:hello@impro.pr' title='Написать в школу интернет-маркетинга IMPRO').footer__mail
+                include ../../svg/icon-mail.svg
+                span hello@impro.pro
+            a(href='tel:+78129359518' title='Позвонить в школу интернет-маркетинга IMPRO').footer__phone
+                include ../../svg/icon-phone.svg
+                span.footer__phone-code 8 (812)
+                span.footer__phone-number 935 95 18
+
+include _bottom
 
 .scripts
 

@@ -41,22 +41,3 @@
         z-index: 5;
     }
 }
-
-.link-more{
-    @include font-family('OpenSans-Semibold');
-    font-size: 14px;
-    text-decoration: none;
-    color: $color-teacher-more;
-    &:after{
-        @include transition();
-        content: '';
-        display: inline-block;
-        width: 14px;
-        height: 14px;
-        background-image: url(../img/link-arrow.png);
-        background-repeat: no-repeat;
-        vertical-align: middle;
-        margin-left: 4px;
-    }
-    &:hover:after{  background-image: url(../img/link-arrow--hover.png);  }
-}

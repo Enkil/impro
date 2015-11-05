@@ -46,11 +46,13 @@
         box-sizing: border-box;
     }
     &__date{
+        @include font-family('Intro-Regular');
         color: $color-blog-slide-date;
         font-size: 28px;
         text-align: center;
     }
     &__month{
+        @include font-family('Intro-Regular');
         font-size: 18px;
         color: $color-blog-slide-date;
         text-align: center;

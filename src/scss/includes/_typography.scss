@@ -22,3 +22,33 @@ html {
     width: 100%;
     text-align: center;
 }
+
+.h3-title{
+    @include font-family('OpenSans-Semibold');
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $color-h3-title;
+    margin-bottom: 20px;
+}
+
+
+.link-more{
+    @include font-family('OpenSans-Semibold');
+    font-size: 14px;
+    text-decoration: none;
+    color: $color-teacher-more;
+    display: inline-block;
+    &:after{
+        @include transition();
+        content: '';
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background-image: url(../img/link-arrow.png);
+        background-repeat: no-repeat;
+        vertical-align: middle;
+        margin-left: 4px;
+    }
+    &:hover:after{  background-image: url(../img/link-arrow--hover.png);  }
+    &--footer{  margin-left: 66px;  }
+}
