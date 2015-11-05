@@ -1,0 +1,61 @@
+.event{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+    margin-bottom: 110px;
+
+    &__img{
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
+    }
+    &__info-wrp{
+        width: 250px;
+        flex-wrap: wrap;
+        padding-right: 40px;
+        box-sizing: border-box;
+        display: flex;
+    }
+    &__title{
+        @include font-family('OpenSans-Semibold');
+        font-size: 15px;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    &__data-wrp{
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__data{
+        @include font-family('OpenSans-Semibold');
+        font-size: 12px;
+        color: $color-blog-slide-info;
+        &:before{
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 12px;
+        }
+        &--time:before{  background-image: url(../img/icon-time.png);  width: 14px;  height: 17px;  }
+        &--duration:before{  background-image: url(../img/icon-duration.png);  width: 15px;  height: 16px;  }
+    }
+
+    &__text{
+        @include font-family('OpenSans-Light');
+        font-size: 12px;
+        color: $color-event-text;
+        margin: 0;
+    }
+    &__leads{
+        font-size: 12px;
+        color: $color-course-leads;
+        text-align: left;
+        & b{  @include font-family('OpenSans-Semibold');  }
+        & span{  @include font-family('OpenSans-Light');  }
+    }
+}

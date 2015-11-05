@@ -48,4 +48,10 @@
 
     // Footer
     .footer-column{  width: 100%;   }
+
+    // Courses and events
+    .event{  width: 100%; align-items: flex-start;}
+    .event__img{  margin: 0 auto 20px auto;}
+    .event__info-wrp{  margin: 0 auto;}
+
 }

@@ -65,7 +65,7 @@
         text-transform: uppercase;
         color: $color-header-title;
         margin-top: 0;
-        margin-bottom: 25px;
+        margin-bottom: 10px;
     }
     &__text{
         @include font-family('OpenSans-Regular');
@@ -104,10 +104,17 @@
     justify-content: space-between;
 
     &__text{
-        @include font-family('Intro-Regular');
-        font-size: 30px;
+        @include font-family('OpenSans-Semibold');
+        font-size: 40px;
         color: $color-header-down-text;
         text-transform: uppercase;
+        position: relative;
+        bottom: -5px;
+        &--small{
+            @include font-family('OpenSans-Regular');
+            font-size: 34px;
+            bottom: -12px;
+        }
     }
     &__arrow{
         @include transition();
