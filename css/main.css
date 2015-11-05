@@ -653,6 +653,52 @@ html {
     font-family : "Intro-Regular", sans-serif;
 }
 
+.h3-title {
+    margin-bottom : 20px; 
+
+    font-weight : normal;
+    font-size : 14px;
+    color : #474749;
+    text-transform : uppercase;
+    font-style : normal;
+
+    font-family : "OpenSans-Semibold", sans-serif;
+}
+
+.link-more {
+    display : inline-block; 
+
+    font-weight : normal;
+    font-size : 14px;
+    color : #813194;
+    text-decoration : none;
+    font-style : normal;
+
+    font-family : "OpenSans-Semibold", sans-serif;
+}
+.link-more:after {
+    content : "";
+
+    display : inline-block;
+    width : 14px;
+    height : 14px;
+    margin-left : 4px; 
+
+    vertical-align : middle;
+
+    background-image : url(../img/link-arrow.png);
+    background-repeat : no-repeat;
+
+    -webkit-transition : all .5s linear;
+            transition : all .5s linear;
+}
+.link-more:hover:after {
+    background-image : url(../img/link-arrow--hover.png);
+}
+.link-more--footer {
+    margin-left : 66px;
+}
+
 [class^="amg-"] {
     box-sizing : border-box;
 }
@@ -1815,35 +1861,6 @@ html {
     z-index : 5;
 }
 
-.link-more {
-    font-weight : normal;
-    font-size : 14px;
-    color : #813194; 
-    text-decoration : none;
-    font-style : normal;
-
-    font-family : "OpenSans-Semibold", sans-serif;
-}
-.link-more:after {
-    content : "";
-
-    display : inline-block;
-    width : 14px;
-    height : 14px;
-    margin-left : 4px; 
-
-    vertical-align : middle;
-
-    background-image : url(../img/link-arrow.png);
-    background-repeat : no-repeat;
-
-    -webkit-transition : all .5s linear;
-            transition : all .5s linear;
-}
-.link-more:hover:after {
-    background-image : url(../img/link-arrow--hover.png);
-}
-
 .st-res-slider {
     display : -webkit-box;
     display : -webkit-flex;
@@ -2051,14 +2068,22 @@ html {
     font-family : "Intro-Regular", sans-serif;
 }
 .blog-slide__date {
+    font-weight : normal;
     font-size : 28px;
     text-align : center; 
     color : #fff;
+    font-style : normal;
+
+    font-family : "Intro-Regular", sans-serif;
 }
 .blog-slide__month {
+    font-weight : normal;
     font-size : 18px;
     text-align : center; 
     color : #fff;
+    font-style : normal;
+
+    font-family : "Intro-Regular", sans-serif;
 }
 .blog-slide__title {
     margin-top : 0;
@@ -2182,6 +2207,206 @@ html {
             transform : rotate(0deg);
 }
 
+.footer {
+    padding-bottom : 30px;
+}
+.footer__address {
+    display : inline-block; 
+    margin-bottom : 15px;
+
+    font-weight : normal;
+    font-size : 13px;
+    color : #6e6f71;
+    font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
+}
+.footer__mail {
+    display : inline-block;
+    width : 100%;
+    margin-bottom : 15px; 
+
+    font-weight : normal;
+    font-size : 14px;
+    color : #6e6f71;
+    text-decoration : none;
+    font-style : normal;
+    letter-spacing : .005em;
+
+    -webkit-transition : all .5s linear;
+            transition : all .5s linear;
+
+    font-family : "OpenSans-Regular", sans-serif;
+}
+.footer__mail:hover {
+    color : #8ec23f;
+}
+.footer__mail svg {
+    width : 14px;
+    height : 10px;
+    margin-right : 10px;
+
+    vertical-align : middle; 
+
+    fill : #8ec23f;
+}
+.footer__phone {
+    display : inline-block; 
+    width : 100%;
+
+    font-weight : normal;
+    font-size : 14px;
+    color : #6e6f71;
+    text-decoration : none;
+    font-style : normal;
+
+    font-family : "OpenSans-Bold", sans-serif;
+}
+.footer__phone svg {
+    width : 14px;
+    height : 13px;
+    margin-right : 10px;
+
+    vertical-align : middle; 
+
+    fill : #8ec23f;
+}
+.footer__phone-code {
+    margin-right : 5px;
+
+    font-size : 14px;
+    color : #6e6f71;
+    letter-spacing : .005em;
+
+    -webkit-transition : all .5s linear;
+            transition : all .5s linear;
+}
+.footer__phone-code:hover {
+    color : #8ec23f;
+}
+.footer__phone-number {
+    font-size : 1.14286/pxrem;
+    color : #8ec23f; 
+    letter-spacing : .022em;
+}
+.footer__services {
+    padding : 0;
+
+    list-style : none;
+}
+.footer__services-item {
+    margin-bottom : 20px;
+}
+.footer__services-item:last-child {
+    margin-bottom : 0;
+}
+.footer__services-link {
+    font-weight : normal;
+    font-size : 14px;
+    color : #79797a;
+    text-decoration : none; 
+    font-style : normal;
+
+    -webkit-transition : all .5s linear;
+            transition : all .5s linear;
+
+    font-family : "OpenSans-Semibold", sans-serif;
+}
+.footer__services-link:hover {
+    color : #8ec23f;
+}
+.footer__services-link:before {
+    content : "";
+
+    display : inline-block;
+    width : 32px;
+    height : 32px;
+    margin-right : 12px; 
+
+    vertical-align : middle;
+
+    background-repeat : no-repeat;
+    background-size : contain;
+}
+.footer__services-link--audit:before {
+    background-image : url(../img/icon-audit.png);
+}
+.footer__services-link--tutor:before {
+    background-image : url(../img/icon-tutor.png);
+}
+.footer__services-link--upskills:before {
+    background-image : url(../img/icon-upskills.png);
+}
+.footer__nav-list {
+    padding : 0;
+
+    list-style : none;
+}
+.footer__nav-item {
+    margin-bottom : 20px;
+}
+.footer__nav-item:last-child {
+    margin-bottom : 0;
+}
+.footer__nav-link {
+    font-weight : normal;
+    font-size : 14px;
+    color : #813193;
+    text-decoration : none; 
+    font-style : normal;
+
+    -webkit-transition : all .5s linear;
+            transition : all .5s linear;
+
+    font-family : "OpenSans-Semibold", sans-serif;
+}
+.footer__nav-link:hover {
+    color : #8ec23f;
+}
+
 .footer-column {
     width : 25%;
+}
+
+.footer-anons__digits {
+    display : inline-block;
+    width : 56px;
+    height : 32px;
+    margin-right : 10px; 
+
+    font-weight : normal;
+    font-size : 17px;
+    line-height : 32px;
+    vertical-align : middle;
+    text-align : center;
+    color : #fff;
+    font-style : normal;
+
+    background-image : url(../img/footer-digits-bg.png);
+    background-repeat : no-repeat;
+
+    font-family : "Intro-Regular", sans-serif;
+}
+
+.footer-anons__month {
+    font-weight : normal;
+    font-size : 14px;
+    color : #adcd00;
+    text-transform : uppercase; 
+    font-style : normal;
+
+    font-family : "OpenSans-Semibold", sans-serif;
+}
+
+.footer-anons__text {
+    margin-top : 6px;
+    margin-bottom : 15px; 
+    margin-left : 66px;
+
+    font-weight : normal;
+    font-size : 12px;
+    color : #474749;
+    font-style : normal;
+
+    font-family : "OpenSans-Light", sans-serif;
 }
