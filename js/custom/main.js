@@ -22,7 +22,15 @@ window.onload = function(){
         slidesToShow: 3,
         lazyLoad: 'ondemand',
         prevArrow: '<div type="button" class="slick-prev"></div>',
-        nextArrow: '<div type="button" class="slick-next"></div>'
+        nextArrow: '<div type="button" class="slick-next"></div>',
+        responsive: [
+            {
+                breakpoint: 740,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
     /**
@@ -32,7 +40,15 @@ window.onload = function(){
         slidesToShow: 4,
         lazyLoad: 'ondemand',
         prevArrow: '<div type="button" class="slick-prev"></div>',
-        nextArrow: '<div type="button" class="slick-next"></div>'
+        nextArrow: '<div type="button" class="slick-next"></div>',
+        responsive: [
+            {
+                breakpoint: 740,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
     /**
@@ -42,7 +58,15 @@ window.onload = function(){
         slidesToShow: 3,
         lazyLoad: 'ondemand',
         prevArrow: '<div type="button" class="slick-prev"></div>',
-        nextArrow: '<div type="button" class="slick-next"></div>'
+        nextArrow: '<div type="button" class="slick-next"></div>',
+        responsive: [
+            {
+                breakpoint: 740,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
     /**
@@ -52,7 +76,15 @@ window.onload = function(){
         slidesToShow: 2,
         lazyLoad: 'ondemand',
         prevArrow: '<div type="button" class="slick-prev"></div>',
-        nextArrow: '<div type="button" class="slick-next"></div>'
+        nextArrow: '<div type="button" class="slick-next"></div>',
+        responsive: [
+            {
+                breakpoint: 740,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
 };
