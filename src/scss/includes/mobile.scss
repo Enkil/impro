@@ -16,7 +16,8 @@ $mq-breakpoints: (
     .h2-title{  font-size: 18px;  }
 
     // Header
-    .header-down__text{  visibility: hidden;  }
+    .header-down{  display: none;   }
+    //.header-down__text{  visibility: hidden;  }
     .top__address, .top__mail, .top__phone{
         width: 100%;
         line-height: 1;
