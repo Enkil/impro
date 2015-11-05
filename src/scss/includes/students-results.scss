@@ -28,6 +28,7 @@
         text-align: center;
         margin-top: 0;
         margin-bottom: 20px;
+        padding: 0 20px;
     }
     &__bq{
         @include font-family('OpenSans-Light');
@@ -35,6 +36,7 @@
         text-align: center;
         margin: 0;
         margin-bottom: 30px;
+        padding: 0 20px;
     }
     &__cite{
         @include font-family('OpenSans-Semibold');

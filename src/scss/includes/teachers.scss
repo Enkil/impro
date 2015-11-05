@@ -32,9 +32,7 @@
         font-size: 14px;
         margin-top: 0;
         margin-bottom: 20px;
-        width: 190px;
-        margin-left: auto;
-        margin-right: auto;
+        padding: 0 20px;
         text-transform: uppercase;
     }
     &__specs{
@@ -42,9 +40,7 @@
         font-size: 12px;
         margin-top: 0;
         margin-bottom: 20px;
-        width: 190px;
-        margin-left: auto;
-        margin-right: auto;
+        padding: 0 20px;
         &--light{
             @include font-family('OpenSans-Light');
             margin-bottom: 35px;

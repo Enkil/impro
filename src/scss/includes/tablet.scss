@@ -1,0 +1,47 @@
+@include mq($from: tablet, $until: desktop) {
+
+    .container{
+        width: 100%;
+        padding: 0 20px;
+        &--top{
+            justify-content: center;
+        }
+    }
+
+    // Header
+    .header-down__text{  visibility: hidden;  }
+
+    // Courses
+    .course__leads{
+        padding: 0 20px;
+    }
+    .course__title{
+        padding: 0 20px;
+    }
+
+    // Forms
+    .form-wrapper{}
+    .form-title{  margin-bottom: 10px;  }
+    .form__input{
+        width: calc(100vw - 60px);
+        margin-bottom: 10px;
+
+        &--wire{  width: calc(100vw - 60px); }
+    }
+
+    .form__btn{  width: calc(100vw - 60px); }
+
+    // Blog Slider
+    .blog-slide__title{
+        margin-top: 10px;
+        text-align: center;
+    }
+    .blog-slide__img-wrp{
+        margin: 0 auto;
+    }
+
+    .blog-slide__right{
+        width: 100%;
+    }
+
+}

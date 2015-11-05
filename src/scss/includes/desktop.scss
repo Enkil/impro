@@ -1,0 +1,19 @@
+@include mq($from: desktop, $until: wide) {
+
+    .container{
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    // Forms
+    .form__input{
+        width: 220px;
+
+        &--wire{  width: 330px; }
+    }
+
+    // Blog Slider
+    .blog-slide__right{
+        width: 210px;
+    }
+}

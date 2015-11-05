@@ -1,11 +1,18 @@
+
+@include mq($from: wide){
+    .container{
+        width: 1148px;
+    }
+}
+
 .container{
-    width: 1148px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
     min-width: 320px;
     position: relative;
+    box-sizing: border-box;
     &--top{  justify-content: space-between;  }
     &--header-menu{
         margin-top: 15px;

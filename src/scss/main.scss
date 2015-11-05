@@ -15,6 +15,7 @@
 @import "includes/variables";
 @import "mixins/font-face";
 @import "mixins/transitions";
+
 @import "includes/png-sprite";
 @import "includes/svg-sprite";
 @import "includes/typography";
@@ -30,3 +31,8 @@
 @import "includes/students-results";
 @import "includes/blog";
 @import "includes/footer";
+
+
+@import "includes/desktop";
+@import "includes/tablet";
+@import "includes/mobile";
