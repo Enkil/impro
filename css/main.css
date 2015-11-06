@@ -1545,7 +1545,7 @@ html
 .header-down__arrow
 {
     position: absolute;
-    top: -10px;
+    top: 2px;
     left: calc(50% - 35px);
 
     display: inline-block;
@@ -1854,6 +1854,10 @@ html
 {
     background-image: url(../img/course-subscribe-bg.jpg);
 }
+.form-wrapper--2
+{
+    background-image: url(../img/contacts-feedback-bg.jpg);
+}
 
 .form-title
 {
@@ -1875,6 +1879,23 @@ html
 {
     margin-bottom: 0;
 }
+.form-title--tal
+{
+    text-align: left;
+}
+
+.form-text
+{
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+
+    margin-top: 0; 
+    margin-bottom: 30px;
+
+    color: #fff;
+}
 
 .form-subtitle
 {
@@ -1890,6 +1911,11 @@ html
     text-transform: uppercase;
 
     color: #fff;
+}
+
+.form-left
+{
+    width: 365px;
 }
 
 .form
@@ -1909,6 +1935,33 @@ html
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
 }
+.form--right
+{
+    width: 710px;
+}
+.form__left
+{
+    width: 270px;
+}
+.form__right
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: column; 
+
+    width: 415px;
+
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+}
 .form__label
 {
     position: relative;
@@ -1920,8 +1973,8 @@ html
 
     display: inline-block;
 
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
 
     content: '';
 
@@ -1941,18 +1994,31 @@ html
 {
     background-image: url(../img/icon-phone.png);
 }
+.form__label--theme:before
+{
+    background-image: url(../img/icon-theme.png);
+}
+.form__label--noicon:before
+{
+    display: none;
+}
+.form__label--contacts
+{
+    width: 100%;
+}
 .form__input
 {
     font-family: 'OpenSans-Regular', sans-serif;
     font-size: 18px;
     font-weight: normal;
     font-style: normal;
-    line-height: 50px;
+    line-height: 55px;
 
     box-sizing: border-box;
     width: 270px;
-    height: 50px;
-    padding-left: 60px;
+    height: 55px;
+    margin-bottom: 20px; 
+    padding-left: 65px;
 
     color: #414041;
     border: 0;
@@ -2004,12 +2070,12 @@ html
     font-size: 18px;
     font-weight: normal;
     font-style: normal;
-    line-height: 50px;
+    line-height: 55px;
 
-    display: inline-block;
+    display: block;
 
     width: 270px;
-    height: 50px;
+    height: 55px;
 
     -webkit-transition: all .5s linear;
             transition: all .5s linear;
@@ -2025,6 +2091,17 @@ html
 {
     background: url(../img/index-header-btn-bg--hover.jpg) no-repeat;
     background-size: cover;
+}
+.form__textarea
+{
+    box-sizing: border-box;
+    width: 415px;
+    height: 205px;
+    margin-bottom: 20px; 
+    padding: 15px;
+
+    border: none;
+    outline: none;
 }
 
 .teachers-wrapper
@@ -3084,7 +3161,7 @@ html
     display: -ms-flexbox;
     display:         flex;
 
-    padding-bottom: 35px; 
+    padding-bottom: 35px;
 
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -3093,6 +3170,10 @@ html
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+            align-items: flex-start;
 }
 .contacts__img
 {
@@ -3211,6 +3292,10 @@ html
         width: 100%;
         padding: 0 20px;
     }
+    .form-wrapper
+    {
+        height: auto;
+    }
     .form__input
     {
         width: 220px;
@@ -3218,6 +3303,26 @@ html
     .form__input--wire
     {
         width: 330px;
+    }
+    .form__input--contacts
+    {
+        width: 100%;
+    }
+    .form--right
+    {
+        width: 575px;
+    }
+    .form__left
+    {
+        width: 575px;
+    }
+    .form__right
+    {
+        width: 575px;
+    }
+    .form__textarea--contacts
+    {
+        width: 100%;
     }
     .blog-slide__right
     {
@@ -3230,6 +3335,10 @@ html
     .event__info-wrp
     {
         margin: 0 auto;
+    }
+    .contacts__img
+    {
+        width: 555px;
     }
 }
 
@@ -3259,22 +3368,56 @@ html
     {
         padding: 0 20px;
     }
+    .form-wrapper
+    {
+        height: auto;
+    }
     .form-title
     {
         margin-bottom: 10px;
     }
     .form__input
     {
-        width: calc(100vw - 60px);
+        width: calc(100vw - 65px);
         margin-bottom: 10px;
     }
     .form__input--wire
     {
-        width: calc(100vw - 60px);
+        width: calc(100vw - 65px);
+    }
+    .form__input--contacts
+    {
+        width: 100%;
     }
     .form__btn
     {
-        width: calc(100vw - 60px);
+        width: calc(100vw - 65px);
+    }
+    .form__btn--contacts
+    {
+        width: calc(100vw - 65px);
+        margin: 0 auto;
+    }
+    .form-left
+    {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .form--right
+    {
+        width: 100%;
+    }
+    .form__left
+    {
+        width: 100%;
+    }
+    .form__right
+    {
+        width: 100%;
+    }
+    .form__textarea--contacts
+    {
+        width: 100%;
     }
     .blog-slide__title
     {
@@ -3297,6 +3440,21 @@ html
     .event__info-wrp
     {
         margin: 0 auto;
+    }
+    .contacts__img
+    {
+        width: 100%;
+    }
+    .contacts__right
+    {
+        width: 100%;
+        padding-top: 30px;
+    }
+    .contacts__join
+    {
+        width: 100%;
+
+        text-align: center;
     }
 }
 
@@ -3373,16 +3531,46 @@ html
     }
     .form__input
     {
-        width: calc(100vw - 60px);
+        width: calc(100vw - 65px);
         margin-bottom: 10px;
     }
     .form__input--wire
     {
-        width: calc(100vw - 60px);
+        width: calc(100vw - 65px);
+    }
+    .form__input--contacts
+    {
+        width: 100%;
     }
     .form__btn
     {
-        width: calc(100vw - 60px);
+        width: calc(100vw - 65px);
+    }
+    .form__btn--contacts
+    {
+        width: calc(100vw - 65px);
+        margin: 0 auto;
+    }
+    .form-left
+    {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .form--right
+    {
+        width: 100%;
+    }
+    .form__left
+    {
+        width: 100%;
+    }
+    .form__right
+    {
+        width: 100%;
+    }
+    .form__textarea--contacts
+    {
+        width: 100%;
     }
     .blog-slide
     {
@@ -3422,5 +3610,24 @@ html
     .event__info-wrp
     {
         margin: 0 auto;
+    }
+    .contacts__img
+    {
+        width: 100%;
+    }
+    .contacts__right
+    {
+        width: 100%;
+        padding-top: 30px;
+    }
+    .contacts__join
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+    .contacts__join-text
+    {
+        width: 100%;
     }
 }
