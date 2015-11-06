@@ -6,11 +6,17 @@
     }
 
     // Forms
+    .form-wrapper{  height: auto;   }
     .form__input{
         width: 220px;
 
         &--wire{  width: 330px; }
+        &--contacts{  width: 100%;  }
     }
+    .form--right{  width: 575px; }
+    .form__left{  width: 575px; }
+    .form__right{  width: 575px; }
+    .form__textarea--contacts{  width: 100%;    }
 
     // Blog Slider
     .blog-slide__right{
@@ -20,4 +26,8 @@
     // Courses and events
     .event__img{  margin: 0 auto 20px auto;}
     .event__info-wrp{  margin: 0 auto;}
+
+    // Contacts
+    .contacts__img{  width: 555px;  }
+
 }

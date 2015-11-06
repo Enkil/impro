@@ -6,6 +6,7 @@
     padding-top: 75px;
     padding-bottom: 50px;
     &--1{  background-image: url(../img/course-subscribe-bg.jpg);  }
+    &--2{  background-image: url(../img/contacts-feedback-bg.jpg);  }
 }
 
 .form-title{
@@ -20,6 +21,17 @@
     &--mb-none{
         margin-bottom: 0;
     }
+    &--tal{
+        text-align: left;
+    }
+}
+
+.form-text{
+    @include font-family('OpenSans-Regular');
+    font-size: 16px;
+    color: $color-form-text;
+    margin-bottom: 30px;
+    margin-top: 0;
 }
 
 .form-subtitle{
@@ -32,19 +44,37 @@
     margin-bottom: 35px;
 }
 
+.form-left{
+    width: 365px;
+}
+
 .form{
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
+    &--right{
+        width: 710px;
+    }
+
+    &__left{
+        width: 270px;
+    }
+    &__right{
+        width: 415px;
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+    }
+
     &__label{
         position: relative;
         &:before{
             content: '';
             display: inline-block;
-            width: 50px;
-            height: 50px;
+            width: 55px;
+            height: 55px;
             background-color: $color-form-icon-bg;
             background-position: center;
             background-repeat: no-repeat;
@@ -54,6 +84,9 @@
         &--name:before{  background-image: url(../img/icon-man.png);   }
         &--mail:before{  background-image: url(../img/icon-mail.png);  }
         &--phone:before{  background-image: url(../img/icon-phone.png);  }
+        &--theme:before{  background-image: url(../img/icon-theme.png);  }
+        &--noicon:before{  display: none;  }
+        &--contacts{  width: 100%;  }
     }
 
     &__input{
@@ -61,28 +94,31 @@
         font-size: 18px;
         color: $color-form-input;
         width: 270px;
-        height: 50px;
-        line-height: 50px;
+        height: 55px;
+        line-height: 55px;
         border: 0;
-        padding-left: 60px;
+        padding-left: 65px;
         box-sizing: border-box;
         outline: none;
+        margin-bottom: 20px;
         &::placeholder{
             @include font-family('OpenSans-Regular');
             font-size: 18px;
             color: $color-form-input;
         }
         &--wire{    width: 415px;   }
+        &--contacts{}
     }
     &__btn{
         @include transition();
         @include font-family('Intro-Regular');
         font-size: 18px;
         color: $color-header-btn;
-        display: inline-block;
+        //display: inline-block;
+        display: block;
         text-transform: uppercase;
-        height: 50px;
-        line-height: 50px;
+        height: 55px;
+        line-height: 55px;
         width: 270px;
         text-align: center;
         background: url(../img/index-header-btn-bg.jpg) no-repeat;
@@ -92,5 +128,18 @@
             background: url(../img/index-header-btn-bg--hover.jpg) no-repeat;
             background-size: cover;
         }
+        &--contacts{
+
+        }
+    }
+    &__textarea{
+        border: none;
+        outline: none;
+        padding: 15px;
+        height: 205px;
+        width: 415px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        &--contacts{}
     }
 }
